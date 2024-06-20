@@ -2,6 +2,25 @@ let arr = [];
 let user = [];
 var level = 1;
 var gameon = true;
+
+$(document).ready(function() {
+    // Function to simulate a key press event
+    function simulateKeyPress(key) {
+        var event = $.Event('keypress', {
+            key: key
+        });
+
+        // Dispatch the event to the document
+        $(document).trigger(event);
+    }
+
+    // Click event handler for the button
+    $('#start_button').click(function() {
+        // Simulate pressing the 'Enter' key
+        simulateKeyPress('Enter');
+    });
+
+});
 function comp_inp(){
     var num = Math.floor((Math.random()*4 + 1));
     highlight(num);
@@ -43,6 +62,7 @@ function check_n_play(){
 }
 $(document).keypress(function(e){
     start();
+    $("p").hide();
 });
 function start(){
     level =1;

@@ -6,6 +6,28 @@ h1{
     margin: 80px 0px;
     color: whitesmoke;
 }
+.flexDiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#start_button{
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    text-align: center;
+    background-color: blue;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 200px;
+}
+p{
+    text-align: center;
+    color: white;
+}
 .cent{
     display: flex;
     justify-content: center;
