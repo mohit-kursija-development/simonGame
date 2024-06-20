@@ -63,6 +63,7 @@ function check_n_play(){
 $(document).keypress(function(e){
     start();
     $("p").hide();
+    $("#start_button").hide();
 });
 function start(){
     level =1;
